@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #6c5b7b;
+            color: #f4f1de;
+        }
+
+        .custom-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-card {
+            background-color: #59376b;
+            color: #f4f1de;
+        }
+    </style>
+    <script type="module" src="js/login.js"></script>
+</head>
+
+<body>
+    <div class="container custom-container">
+        <div class="card custom-card">
+            <div class="card-body">
+                <h2 class="text-center">Iniciar sesión</h2>
+                <form id="formLogin" name="formLogin">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Introduce tu correo"
+                            name="correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Contraseña:</label>
+                        <input type="password" class="form-control" id="password"
+                            placeholder="Introduce tu contraseña" name="password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" id="login" name="login">Iniciar sesión</button>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <a href="registro.html">Registrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
